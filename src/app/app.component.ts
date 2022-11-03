@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Navaja Suiza', url: '/razor', icon: 'build' },
+    { title: 'Genero', url: '/gender', icon: 'transgender' },
+    { title: 'Edad', url: '/age', icon: 'golf' },
+    { title: 'Universidades', url: '/university', icon: 'school' },
+    { title: 'Clima', url: '/weather', icon: 'cloudy-night' },
+    { title: 'Contratame', url: '/hireme', icon: 'cash' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

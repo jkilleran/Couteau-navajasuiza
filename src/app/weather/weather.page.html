@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Clima en RD</ion-title>
+  </ion-toolbar>
+</ion-header>
+  <ion-content>
+
+
+    <div class="imagen">
+      <img src={{Imagen1}}>
+    </div>
+
+  
+  <ion-button color="dark" (click)="presentPopover($event)">Humedad</ion-button>
+  <ion-popover #popover [isOpen]="isOpen" (didDismiss)="isOpen = false">
+    <ng-template>
+      <ion-content class="ion-padding">{{Weather.main.humidity}}%</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button color="dark" (click)="presentPopover2($event)">Velocidad de viento</ion-button>
+  <ion-popover #popover [isOpen]="isOpen2" (didDismiss)="isOpen2 = false">
+    <ng-template>
+      <ion-content class="ion-padding">{{Weather.wind.speed}}m/s</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button color="dark" (click)="presentPopover3($event)">Temperatura</ion-button>
+  <ion-popover #popover [isOpen]="isOpen3" (didDismiss)="isOpen3 = false">
+    <ng-template>
+      <ion-content class="ion-padding">{{Weather.main.temp}}°C</ion-content>
+    </ng-template>
+  </ion-popover>
+
+  <ion-button color="dark" (click)="presentPopover4($event)">Descripcion del dia</ion-button>
+  <ion-popover #popover [isOpen]="isOpen4" (didDismiss)="isOpen4 = false">
+    <ng-template>
+      <ion-content  class="ion-padding">{{Weather.weather[0].description}}</ion-content>
+    </ng-template>
+  </ion-popover>
+  
+
+
+
+  </ion-content>
+
+
+
